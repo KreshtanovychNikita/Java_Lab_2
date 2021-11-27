@@ -1,5 +1,7 @@
 package classes;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 import java.util.Objects;
 import java.util.UUID;
 
@@ -7,7 +9,7 @@ public class Detal {
     UUID Id;
     UUID IdProizvoditel;
     String Name;
-    int Articul;
+    Integer Articul;
     float Price;
 
     public Detal(){
@@ -38,7 +40,7 @@ public class Detal {
             Detal.Name = name;
             return  this;
         }
-        public Builder addArticul(int articul){
+        public Builder addArticul(Integer articul){
             Detal.Articul = articul;
             return this;
         }
@@ -103,4 +105,24 @@ public class Detal {
      */
 
     public float getPrice() {return Price;}
+
+    public void setId(UUID id) {
+        Id = id;
+    }
+
+    public void setIdProizvoditel(UUID idProizvoditel) {
+        IdProizvoditel = idProizvoditel;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public void setArticul(Integer articul) {
+        Articul = articul;
+    }
+    @JsonCreator
+    public void setPrice(float price) {
+        Price = price;
+    }
 }
