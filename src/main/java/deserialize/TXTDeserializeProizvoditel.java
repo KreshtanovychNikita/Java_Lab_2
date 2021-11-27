@@ -24,7 +24,7 @@ public class TXTDeserializeProizvoditel implements MyDeserialize<Proizvoditel> {
             case "ProizvoditelId":
                 builder.addIdProizvoditel(UUID.fromString(arr[1]));
                 break;
-            case "PostavkiName":
+            case "NameProizvoditel":
                 builder.addName(arr[1]);
                 break;
             case "PhoneNumber":

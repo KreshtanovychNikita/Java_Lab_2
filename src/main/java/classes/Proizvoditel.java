@@ -101,4 +101,20 @@ public class Proizvoditel {
     public String getCountry() {
         return country;
     }
+
+    public void setId(UUID id) {
+        Id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
 }

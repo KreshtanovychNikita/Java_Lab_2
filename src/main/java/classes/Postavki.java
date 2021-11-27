@@ -94,4 +94,20 @@ public class Postavki {
      */
 
     public UUID getIdDetal() {return IdDetal;}
+
+    public void setIdp(UUID idp) {
+        Idp = idp;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public void setDate(LocalDate date) {
+        Date = date;
+    }
+
+    public void setIdDetal(UUID idDetal) {
+        IdDetal = idDetal;
+    }
 }
